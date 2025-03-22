@@ -1,13 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
+
+public enum ItemType
+{
+    fruit,
+    vegetable,
+    snack
+}
 public class Items : MonoBehaviour
 {
-    [SerializeField] private ItemData itemSO;
+    public string itemName;
+    public int itemId;
+    public float weight;
+    public ItemType itemType;
+    public Sprite iconSprite;
 
-    public string GetName()
-    {
-       return itemSO.Name;
-    }
 }
+
