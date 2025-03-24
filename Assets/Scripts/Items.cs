@@ -17,6 +17,7 @@ public class Items : MonoBehaviour
     public float weight;
     public ItemType itemType;
     public Sprite iconSprite;
-
+    public Transform iconHoldPoint;
+    public Transform targetPoint;
 }
 
